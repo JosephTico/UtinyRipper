@@ -278,10 +278,6 @@ namespace uTinyRipper.Lz4
 			{
 				throw new Exception($"Unexpected end of input stream. Read {read} but expected {count}");
 			}
-			if (IsDataLeft)
-			{
-				throw new Exception($"Some data left");
-			}
 		}
 
 		public override void Write(byte[] buffer, int offset, int count)
