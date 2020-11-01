@@ -30,6 +30,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: TINY'
   inputs:
-    PathtoPublish: 'pkNX.WinForms\bin\Release'
+    PathtoPublish: 'Bins\Release\x64'
     ArtifactName: tiny
   condition: succeededOrFailed()
